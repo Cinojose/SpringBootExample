@@ -47,7 +47,7 @@ public class DaoPerson implements Dao<Person> {
     public Collection getAll() {
         // TODO Auto-generated method stub
         logger.info("Retrieving all person");
-        return null;
+        return DB;
     }
 
     @Override

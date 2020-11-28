@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.Collection;
+
 import com.example.demo.dao.Dao;
 import com.example.demo.model.Person;
 
@@ -19,6 +21,10 @@ public class PersonService {
 
     public int insertPerson(Person person){
         return personDao.save(person);
+    }
+
+    public Collection getAllPeople(){
+        return personDao.getAll();
     }
     
 }
